@@ -5,6 +5,7 @@ import { DEFAULT_PLAYER_DATA, PlayerData } from "shared/types/player-data";
 import { playerDataGuard } from "shared/utils/guard";
 import { rootProducer } from "server/store";
 import { DataStoreService } from "../core/data-store.service";
+import { Dictionary } from "@rbxts/sift";
 
 type PlayerProfile = ReturnType<DataStoreService["playerStore"]["StartSessionAsync"]>;
 
@@ -46,10 +47,7 @@ export class PlayerDataService implements OnStart {
 
 		if (!playerDataGuard(profile.Data)) {
 			warn(`[PlayerDataService] Data ${player.Name} korup, reset ke default.`);
-			profile.Data = {
-				...DEFAULT_PLAYER_DATA,
-				settings: { ...DEFAULT_PLAYER_DATA.settings },
-			};
+			profile.Data = Dictionary.mergeDeep(DEFAULT_PLAYER_DATA, profile.Data as Partial<PlayerData>) as PlayerData;
 		}
 
 		this.setupPlayerState(player, profile);
