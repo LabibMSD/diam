@@ -24,7 +24,19 @@
 		"flamework:out/server/services/core/network-sync.service@NetworkSyncService": "server/services/core/network-sync.service@NetworkSyncService",
 		"flamework:out/server/services/core/data-store.service@DataStoreService": "server/services/core/data-store.service@DataStoreService",
 		"flamework:out/client/controllers/core/network-sync.controller@NetworkSyncController": "client/controllers/core/network-sync.controller@NetworkSyncController",
-		"flamework:out/server/services/player/player-data.service@PlayerDataService": "server/services/player/player-data.service@PlayerDataService"
+		"flamework:out/server/services/player/player-data.service@PlayerDataService": "server/services/player/player-data.service@PlayerDataService",
+		"flamework:out/server/components/ore@Ore": "server/components/ore@Ore",
+		"flamework:out/client/components/ore@Ore": "client/components/ore@Ore",
+		"flamework:out/server/components/ore.component@Ore": "server/components/ore.component@Ore",
+		"flamework:out/client/components/pickaxe.component@PickaxeComponent": "client/components/pickaxe.component@PickaxeComponent",
+		"flamework:out/client/components/pickaxe.component@_PickaxeComponent": "client/components/pickaxe.component@_PickaxeComponent",
+		"flamework:out/server/services/mining.service@MiningService": "server/services/mining.service@MiningService",
+		"flamework:out/server/components/mineable-object.component@Ore": "server/components/mineable-object.component@Ore",
+		"flamework:out/server/components/mineable-object.component@MineableObject": "server/components/mineable-object.component@MineableObject",
+		"flamework:out/server/components/mineable-object.component@MineableObjectComponent": "server/components/mineable-object.component@MineableObjectComponent",
+		"flamework:out/server/components/mineable.component@MineableObjectComponent": "server/components/mineable.component@MineableObjectComponent",
+		"flamework:out/server/components/mineable.component@MineableComponent": "server/components/mineable.component@MineableComponent",
+		"flamework:out/server/components/sell-area.component@SellAreaComponent": "server/components/sell-area.component@SellAreaComponent"
 	},
 	"metadata": {}
 }

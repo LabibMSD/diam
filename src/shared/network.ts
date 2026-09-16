@@ -6,10 +6,16 @@ interface ClientToServerEvents {
 		start(): void;
 	};
 
-    playerSetting: {
-        musicVolume(volume: number): void
-        sfxVolume(volume: number): void
-    }
+	playerSetting: {
+		musicVolume(volume: number): void;
+		sfxVolume(volume: number): void;
+	};
+
+	mining: {
+		mineObject(mineableObject: Part): void;
+		upgradeMultiplier(): void;
+		sellAllOre(): void;
+	};
 }
 
 interface ServerToClientEvents {
