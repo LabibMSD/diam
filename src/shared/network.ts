@@ -6,10 +6,10 @@ interface ClientToServerEvents {
 		start(): void;
 	};
 
-    playerSetting: {
-        musicVolume(volume: number): void
-        sfxVolume(volume: number): void
-    }
+	playerSetting: {
+		setMusicVolume(volume: number): void;
+		setSfxVolume(volume: number): void;
+	};
 }
 
 interface ServerToClientEvents {

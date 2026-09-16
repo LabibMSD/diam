@@ -1,8 +1,8 @@
 import { combineProducers } from "@rbxts/reflex";
-import { playerSlice } from "./slices/player.slice";
+import { playerProducer } from "./slices/player.slice";
 
 export const slices = {
-	player: playerSlice,
+	player: playerProducer,
 };
 
 export const rootProducer = combineProducers(slices);

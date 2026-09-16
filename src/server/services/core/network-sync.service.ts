@@ -1,6 +1,5 @@
 import { Service, OnStart } from "@flamework/core";
 import { createBroadcaster } from "@rbxts/reflex";
-import { Trove } from "@rbxts/trove";
 import { Events } from "server/network";
 import { rootProducer, slices } from "server/store";
 
