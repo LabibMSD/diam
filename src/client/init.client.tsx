@@ -11,7 +11,7 @@ const root = createRoot(new Instance("Folder"));
 root.render(
 	<StrictMode>
 		<ReflexProvider producer={rootProducer}>
-			{createPortal(<App />, playerGui)}
+			{createPortal(<screengui><App /></screengui>, playerGui)}
 		</ReflexProvider>
 	</StrictMode>,
 );
